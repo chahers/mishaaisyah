@@ -30,8 +30,8 @@
 }
 
 .profile-image {
-    width: 50vh; 
-    height: auto; 
+    width: flex; 
+    max-width: 50vh;
     margin-right: 5vh; 
     border-radius: 10px; 
     opacity: 0;
