@@ -36,7 +36,6 @@ function App() {
   const [selectedTab, setSelectedTab] = useState('');
   
   return (
-    <Router>
       <div className="app-container">
         <aside className="sidebar">
           <nav>
@@ -59,7 +58,6 @@ function App() {
           </Routes>
         </main>
       </div>
-    </Router>
   );
 }
 

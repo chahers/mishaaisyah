@@ -16,27 +16,34 @@
     transform: translateX(-50%);
     font-family: 'Times New Roman', Times, serif;
     /* font-style: italic; */
-    font-size: 10vh;
+    font-size: 9vh;
     color: #b3025d;
     z-index: 1000;
 }
 
 .image-content {
+    margin: 20px 0 0 70px;
     padding: 100px 0;
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Align items vertically */
-    justify-content: center; /* Center the content horizontally */
+    display: flex;
+    align-items: center; 
+    justify-content: center;
 }
 
 .profile-image {
-    width: 50vh; /* Adjust the size of the image */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 5vh; /* Space between image and description */
-    border-radius: 10px; /* Optional: add rounded corners */
+    width: 50vh; 
+    height: auto; 
+    margin-right: 5vh; 
+    border-radius: 10px; 
+    opacity: 0;
+    transition: opacity 1.0s ease-in-out;
 }
 
 .description {
-    max-width: 500px; /* Set a max width for the description */
+    max-width: 500px; 
     font-family: 'Times New Roman', Times, serif;
     font-size: 4vh;
+}
+
+.profile-image.loaded {
+    opacity: 1;
 }

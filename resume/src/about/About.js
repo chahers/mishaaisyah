@@ -1,8 +1,12 @@
-function About() {
+import './About.css';
+
+const About = () => {
     return ( 
-        <div>
-            
-        </div>
+        <>
+            <div className='about-container'>
+
+            </div>
+        </>
      );
 }
 

@@ -1,0 +1,8 @@
+.interests-container{
+    margin: 10px 0 10px 70px;
+    width: flex;
+    height: 500px;
+    background-color: bisque;
+    opacity: 0.2;
+    border-radius: 20px;
+}
