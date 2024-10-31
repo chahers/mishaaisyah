@@ -10,7 +10,7 @@ const Home = () => {
             <div className='container'>
                 <img src={picture} alt="Misha" 
                 className={`image ${isLoaded ? 'loaded' : ''}`} onLoad={() => setIsLoaded(true)}/>
-                <div className="description">
+                <div className="image-description">
                     <p>Welcome to my personal webpage! I'm a recent Lancaster University Software Engineering graduate. Scroll down to know more about me!</p>
                 </div>
             </div>

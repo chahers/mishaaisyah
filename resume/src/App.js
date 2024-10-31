@@ -4,13 +4,14 @@ import Avatar from '@mui/material/Avatar';
 import React, { useState, useRef, useEffect } from 'react';
 import HomeTwoToneIcon from '@mui/icons-material/HomeTwoTone';
 import InfoTwoToneIcon from '@mui/icons-material/InfoTwoTone';
+import BuildTwoToneIcon from '@mui/icons-material/BuildTwoTone';
 import FavoriteTwoToneIcon from '@mui/icons-material/FavoriteTwoTone';
 import QuestionAnswerTwoToneIcon from '@mui/icons-material/QuestionAnswerTwoTone';
 import Tooltip from '@mui/material/Tooltip';
 import { BrowserRouter as Router, Route, Routes, Link, useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Home from './Home';
-import About from './about/About';
+import Skill from './skill/Skill';
 import Interests from './interests/Interests';
 import Contact from './contact/Contact';
 
@@ -36,7 +37,7 @@ function App() {
 
   // Refs for each section
   const homeRef = useRef(null);
-  const aboutRef = useRef(null);
+  const skillRef = useRef(null);
   const interestsRef = useRef(null);
   const contactRef = useRef(null);
 
@@ -63,7 +64,7 @@ function App() {
 
     // Observing each section
     homeRef.current && observer.observe(homeRef.current);
-    aboutRef.current && observer.observe(aboutRef.current);
+    skillRef.current && observer.observe(skillRef.current);
     interestsRef.current && observer.observe(interestsRef.current);
     contactRef.current && observer.observe(contactRef.current);
 
@@ -77,8 +78,8 @@ function App() {
             <ul className="nav-tabs">
 
             <TabIcon icon={HomeTwoToneIcon} link="/mishaaisyah" label="Home" onClick={() => scrollToSection(homeRef, 'mishaaisyah')} />
-            <TabIcon icon={InfoTwoToneIcon} link="/about" label="Info" onClick={() => scrollToSection(aboutRef, 'about')} />
-            <TabIcon icon={FavoriteTwoToneIcon} link="/interests" label="Interests" onClick={() => scrollToSection(interestsRef, 'interests')} />
+            <TabIcon icon={BuildTwoToneIcon} link="/skill" label="My skills" onClick={() => scrollToSection(skillRef, 'skill')} />
+            <TabIcon icon={FavoriteTwoToneIcon} link="/interests" label="My interests" onClick={() => scrollToSection(interestsRef, 'interests')} />
             <TabIcon icon={QuestionAnswerTwoToneIcon} link="/contact" label="Contact" onClick={() => scrollToSection(contactRef, 'contact')} />
 
             </ul>
@@ -86,7 +87,7 @@ function App() {
         </aside>
         <main className="main-content">
         <div id="mishaaisyah" ref={homeRef}><Home /></div>
-        <div id="about" ref={aboutRef}><About /></div>
+        <div id="skill" ref={skillRef}><Skill /></div>
         <div id="interests" ref={interestsRef}><Interests /></div>
         <div id="contact" ref={contactRef}><Contact /></div>
         </main>

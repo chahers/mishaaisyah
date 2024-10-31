@@ -1,0 +1,45 @@
+.skill-backlay{
+    position: relative;
+    margin: 10px 0 10px 80px;
+    width: flex;
+    height: 600px;
+    background-color: bisque;
+    opacity: 0.2;
+    border-radius: 20px;
+    padding-top: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.skill-heading {
+    position: absolute;
+    width: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 9vh;
+    color: #b3025d;
+    z-index: 0;
+    display: flex;
+    /* padding: 3vh 0; */
+}
+
+.skill-container {
+    margin: 0 0 0 15%;
+    width: flex;
+    display: flex;
+    position: absolute;
+    height: 600px;
+}
+
+.skill-description {
+    width: flex;
+    margin: 22vh 0 0 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4vh;
+    color: #b3025d;
+}
+
+/* .apps-container{
+
+} */

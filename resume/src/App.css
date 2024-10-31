@@ -57,6 +57,8 @@ body {
   text-align: center;
   border-radius: 2em;
   height: flex;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
 }
 
 .nav-tabs {

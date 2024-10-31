@@ -9,7 +9,7 @@
 
 .myheading{
     position: absolute;
-    margin: 10px 0 10px 20px;
+    margin: 9vh 0 10px 20px;
     /* padding: 0; */
     /* top: 20px; */
     left: 50%;
@@ -18,16 +18,17 @@
     font-size: 9vh;
     color: #b3025d;
     z-index: 1000;
+    width: flex;
+
 }
 
 .container {
     margin: 100px 0 0 70px;
-    padding: 50px 0;
+    /* padding: 50px 0; */
+    height: 90vh;
     display: flex;
     align-items: center; 
     justify-content: center;
-    /* background-color: bisque;
-    border-radius: 20px; */
 }
 
 .image {
@@ -37,12 +38,15 @@
     border-radius: 10px; 
     opacity: 0;
     transition: opacity 1.0s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+
 }
 
-.description {
+.image-description {
     max-width: 500px; 
     font-family: 'Times New Roman', Times, serif;
     font-size: 4vh;
+    color: #b3025d;
 }
 
 .image.loaded {

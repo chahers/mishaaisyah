@@ -1,10 +1,11 @@
 .interests-container{
     margin: 10px 0 10px 80px;
     width: flex;
-    height: 500px;
+    height: 600px;
     background-color: bisque;
     opacity: 0.2;
     border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .interests-heading {
