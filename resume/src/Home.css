@@ -9,27 +9,28 @@
 
 .myheading{
     position: absolute;
-    margin: 0 0 10px 0;
-    padding: 0;
-    top: 20px;
+    margin: 10px 0 10px 20px;
+    /* padding: 0; */
+    /* top: 20px; */
     left: 50%;
     transform: translateX(-50%);
     font-family: 'Times New Roman', Times, serif;
-    /* font-style: italic; */
     font-size: 9vh;
     color: #b3025d;
     z-index: 1000;
 }
 
-.image-content {
-    margin: 20px 0 0 70px;
-    padding: 100px 0;
+.container {
+    margin: 100px 0 0 70px;
+    padding: 50px 0;
     display: flex;
     align-items: center; 
     justify-content: center;
+    /* background-color: bisque;
+    border-radius: 20px; */
 }
 
-.profile-image {
+.image {
     width: flex; 
     max-width: 50vh;
     margin-right: 5vh; 
@@ -44,6 +45,6 @@
     font-size: 4vh;
 }
 
-.profile-image.loaded {
+.image.loaded {
     opacity: 1;
 }

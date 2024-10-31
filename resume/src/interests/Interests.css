@@ -1,8 +1,18 @@
 .interests-container{
-    margin: 10px 0 10px 70px;
+    margin: 10px 0 10px 80px;
     width: flex;
     height: 500px;
     background-color: bisque;
     opacity: 0.2;
     border-radius: 20px;
+}
+
+.interests-heading {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 9vh;
+    color: #b3025d;
+    z-index: 1;
 }
