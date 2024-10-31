@@ -42,7 +42,7 @@ function App() {
           <nav>
             <ul className="nav-tabs">
 
-            <TabIcon icon={HomeTwoToneIcon} link="/" label="Home" />
+            <TabIcon icon={HomeTwoToneIcon} link="/mishaaisyah" label="Home" />
             <TabIcon icon={InfoTwoToneIcon} link="/about" label="Info"/>
             <TabIcon icon={FavoriteTwoToneIcon} link="/interests" label="Interests" />
             <TabIcon icon={QuestionAnswerTwoToneIcon} link="/contact" label="Contact" />
@@ -52,7 +52,7 @@ function App() {
         </aside>
         <main className="main-content">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/mishaaisyah" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/interests" element={<Interests />} />
             <Route path="/contact" element={<Contact />} />

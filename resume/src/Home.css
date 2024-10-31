@@ -9,7 +9,7 @@
 
 .myheading{
     position: absolute;
-    margin: 0;
+    margin: 0 0 10px 0;
     padding: 0;
     top: 20px;
     left: 50%;
@@ -38,5 +38,5 @@
 .description {
     max-width: 500px; /* Set a max width for the description */
     font-family: 'Times New Roman', Times, serif;
-    font-size: 2em;
+    font-size: 4vh;
 }
