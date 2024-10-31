@@ -1,7 +1,6 @@
 
 import './App.css';
 import Avatar from '@mui/material/Avatar';
-import Picture from './picture.png';
 import React, { useState } from 'react';
 import HomeTwoToneIcon from '@mui/icons-material/HomeTwoTone';
 import InfoTwoToneIcon from '@mui/icons-material/InfoTwoTone';
@@ -9,7 +8,29 @@ import FavoriteTwoToneIcon from '@mui/icons-material/FavoriteTwoTone';
 import QuestionAnswerTwoToneIcon from '@mui/icons-material/QuestionAnswerTwoTone';
 import Tooltip from '@mui/material/Tooltip';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import Home from './Home';
+import About from './about/About';
+import Interests from './interests/Interests';
+import Contact from './contact/Contact';
 
+const TabIcon = ({ icon: Icon, link, label }) => {
+  return (
+    <Tooltip title={label} placement= 'right'>
+      <li>
+        <Link to={link}>
+          <Icon sx={{ fontSize: 40, color: '#cc689f' }} />
+        </Link>
+      </li>
+    </Tooltip>
+  );
+};
+
+TabIcon.propTypes = {
+  icon: PropTypes.elementType.isRequired,
+  link: PropTypes.string.isRequired,
+  label: PropTypes.string
+};
 
 function App() {
   const [selectedTab, setSelectedTab] = useState('');
@@ -21,39 +42,20 @@ function App() {
           <nav>
             <ul className="nav-tabs">
 
-              <Tooltip title="Home" placement='right'>
-                <li onClick={() => setSelectedTab('Home')}><Link to="/">
-                <HomeTwoToneIcon sx={{ fontSize: 40 }}/>
-                </Link></li>
-              </Tooltip>
-
-              <Tooltip title="About" placement='right'>
-              <li onClick={() => setSelectedTab('About')}><Link to="/about">
-              <InfoTwoToneIcon sx={{ fontSize: 40 }}/>
-              </Link></li>
-              </Tooltip>
-
-              <Tooltip title="Interests" placement='right'>
-              <li onClick={() => setSelectedTab('Interests')}><Link to="/interests">
-              <FavoriteTwoToneIcon sx={{ fontSize: 40 }}/>
-              </Link></li>
-              </Tooltip>
-
-              <Tooltip title="Contact" placement='right'>
-              <li onClick={() => setSelectedTab('Contact')}><Link to="/contact">
-              <QuestionAnswerTwoToneIcon sx={{ fontSize: 40 }}/>
-              </Link></li>
-              </Tooltip>
+            <TabIcon icon={HomeTwoToneIcon} link="/" label="Home" />
+            <TabIcon icon={InfoTwoToneIcon} link="/about" label="Info"/>
+            <TabIcon icon={FavoriteTwoToneIcon} link="/interests" label="Interests" />
+            <TabIcon icon={QuestionAnswerTwoToneIcon} link="/contact" label="Contact" />
 
             </ul>
           </nav>
         </aside>
         <main className="main-content">
           <Routes>
-            {/* <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/interests" element={<Interests />} />
-            <Route path="/contact" element={<Contact />} /> */}
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
       </div>

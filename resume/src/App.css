@@ -74,13 +74,14 @@ body {
 }
 
 .main-content {
-  flex-grow: 1; /* Takes up remaining space */
+  flex-grow: 1; 
   padding: 20px;
 }
 
 .nav-tabs li:hover {
-  color: #f08aaf; /* Color on hover */
-  transform: scale(1.2); /* Slightly enlarge the icon on hover */
+  /* color: #f19aba;  */
+  transform: scale(1.2);
 }
+
 
 
