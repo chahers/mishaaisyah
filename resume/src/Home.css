@@ -1,0 +1,42 @@
+.introduction-container {
+    padding: 20px;
+}
+
+.images-container {
+    display: flex;
+    gap: 20px; 
+}
+
+.myheading{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Times New Roman', Times, serif;
+    /* font-style: italic; */
+    font-size: 10vh;
+    color: #b3025d;
+    z-index: 1000;
+}
+
+.image-content {
+    padding: 100px 0;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center the content horizontally */
+}
+
+.profile-image {
+    width: 50vh; /* Adjust the size of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 5vh; /* Space between image and description */
+    border-radius: 10px; /* Optional: add rounded corners */
+}
+
+.description {
+    max-width: 500px; /* Set a max width for the description */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+}

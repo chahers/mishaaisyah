@@ -76,6 +76,8 @@ body {
 .main-content {
   flex-grow: 1; 
   padding: 20px;
+  display: flex; 
+  flex-direction: column;
 }
 
 .nav-tabs li:hover {
