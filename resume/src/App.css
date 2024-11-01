@@ -50,29 +50,31 @@ body {
 
 .sidebar {
   position: fixed;
-  margin: 1vh 15px;
+  margin: 1vh 2vh;
   background-color: #f7f5c8;
   flex-direction: column;
   align-items: flex-start;
   text-align: center;
   border-radius: 2em;
-  height: flex;
+  height: 96vh;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
   z-index: 1000;
+  width: 4vw;
 }
 
 .nav-tabs {
   list-style: none;
-  padding: 0;
+  padding: 0 0.3vh 0 0;
   display: flex;
   flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  height: 90vh;
 }
 
 .nav-tabs li {
   cursor: pointer;
-  font-size: 18px;
-  padding: 8vh 15px;
-
+  font-size: 4vw;
 }
 
 .main-content {

@@ -1,6 +1,6 @@
 .interests-container{
-    margin: 10px 0 10px 80px;
-    width: flex;
+    margin: 10px 0 10px 4.5vw;
+    width: calc(95vw - 4.5vw);
     height: 600px;
     background-color: bisque;
     opacity: 0.2;
