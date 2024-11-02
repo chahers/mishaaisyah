@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/mishaaisyah/static/css/main.e78b307e.css",
-    "main.js": "/mishaaisyah/static/js/main.306fd123.js",
+    "main.css": "/mishaaisyah/static/css/main.61a1c2d2.css",
+    "main.js": "/mishaaisyah/static/js/main.4c23d19f.js",
     "static/js/453.f19e9853.chunk.js": "/mishaaisyah/static/js/453.f19e9853.chunk.js",
     "static/media/rayapic2024.jpeg": "/mishaaisyah/static/media/rayapic2024.2e965777a53dafdbe514.jpeg",
-    "static/media/postgresql.svg": "/mishaaisyah/static/media/postgresql.2588ce51c243d02d2e6cbd1cff88b818.svg",
-    "static/media/mysql.svg": "/mishaaisyah/static/media/mysql.f18ec689febc0f964873c11a62d93ef9.svg",
-    "static/media/react.svg": "/mishaaisyah/static/media/react.2c5b774a2e1773dab52589b5914fde9d.svg",
-    "static/media/github.svg": "/mishaaisyah/static/media/github.8bbb8f09b1a2192f49f044af8350c909.svg",
-    "static/media/c-programming.svg": "/mishaaisyah/static/media/c-programming.5c898b7ba87358a6c6003f987800016c.svg",
-    "static/media/java.svg": "/mishaaisyah/static/media/java.86afbd0f9a1ed7b026d1e3e457332827.svg",
-    "static/media/html.svg": "/mishaaisyah/static/media/html.6af9d101e94e2c5d6e4a6444b1090339.svg",
-    "static/media/css.svg": "/mishaaisyah/static/media/css.260599751f2b1db0fb713f1e57ab2927.svg",
-    "static/media/python.svg": "/mishaaisyah/static/media/python.154ab1701f17c92f400f5f8e1c0058a8.svg",
-    "static/media/js.svg": "/mishaaisyah/static/media/js.2635b1bb53cf874902e72b1278436b3e.svg",
+    "static/media/postgresql.svg": "/mishaaisyah/static/media/postgresql.9aed68683d15cfc3c3fd8ddf1d89ff4e.svg",
+    "static/media/mysql.svg": "/mishaaisyah/static/media/mysql.5dbd7ffb56a921cecde426cca82f0df4.svg",
+    "static/media/github.svg": "/mishaaisyah/static/media/github.8d1bc524d64f25bee143d25b34c557ac.svg",
+    "static/media/react.svg": "/mishaaisyah/static/media/react.f57b349b4d9df56c9b48c916a8d5adfb.svg",
+    "static/media/java.svg": "/mishaaisyah/static/media/java.3d1f1777f72c1a4ca3003a5378491322.svg",
+    "static/media/python.svg": "/mishaaisyah/static/media/python.4298525c028749eb4fa154f8f5bd1931.svg",
+    "static/media/html.svg": "/mishaaisyah/static/media/html.91afbd10a92d040f2824deee88e93b2f.svg",
+    "static/media/c-programming.svg": "/mishaaisyah/static/media/c-programming.fc9a59303a924a9d57498af3b468e29b.svg",
     "index.html": "/mishaaisyah/index.html",
-    "main.e78b307e.css.map": "/mishaaisyah/static/css/main.e78b307e.css.map",
-    "main.306fd123.js.map": "/mishaaisyah/static/js/main.306fd123.js.map",
+    "static/media/js.svg": "/mishaaisyah/static/media/js.7bb08cdbe94fc2dfc1b51be8c2dae551.svg",
+    "static/media/css.svg": "/mishaaisyah/static/media/css.315b8fdb9dbf75ae965b80bf368895cd.svg",
+    "main.61a1c2d2.css.map": "/mishaaisyah/static/css/main.61a1c2d2.css.map",
+    "main.4c23d19f.js.map": "/mishaaisyah/static/js/main.4c23d19f.js.map",
     "453.f19e9853.chunk.js.map": "/mishaaisyah/static/js/453.f19e9853.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e78b307e.css",
-    "static/js/main.306fd123.js"
+    "static/css/main.61a1c2d2.css",
+    "static/js/main.4c23d19f.js"
   ]
 }
