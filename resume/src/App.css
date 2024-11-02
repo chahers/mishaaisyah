@@ -48,10 +48,28 @@ body {
   transform: scale(1.2);
 }
 
+.nav-tabs li.selected {
+  background-color: #f7f5c8; /* Or another color for the active state */
+  border-radius: 50px; /* Makes the background circular */
+  padding: 0.5vh 0.5vh 0 0.5vh; /* Adds padding to create the circular effect */
+  color: #fff; /* Optional: changes icon color */
+  transform: scale(1.2); /* Optional: adds a slight zoom */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+}
 
 @media(max-width: 440px){
   .sidebar {
     margin: 1vh 1vh;
+    height: 60vh;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .nav-tabs {
+    height: 55vh
+  }
+  .nav-tabs li.selected {
+    padding: 0.5vh;
   }
 }
 

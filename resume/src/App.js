@@ -3,7 +3,6 @@ import './App.css';
 import Avatar from '@mui/material/Avatar';
 import React, { useState, useRef, useEffect } from 'react';
 import HomeTwoToneIcon from '@mui/icons-material/HomeTwoTone';
-import InfoTwoToneIcon from '@mui/icons-material/InfoTwoTone';
 import BuildTwoToneIcon from '@mui/icons-material/BuildTwoTone';
 import FavoriteTwoToneIcon from '@mui/icons-material/FavoriteTwoTone';
 import QuestionAnswerTwoToneIcon from '@mui/icons-material/QuestionAnswerTwoTone';
@@ -15,10 +14,10 @@ import Skill from './skill/Skill';
 import Interests from './interests/Interests';
 import Contact from './contact/Contact';
 
-const TabIcon = ({ icon: Icon, onClick, label }) => {
+const TabIcon = ({ icon: Icon, onClick, label, isSelected }) => {
   return (
     <Tooltip title={label} placement= 'right'>
-      <li onClick={onClick}>
+      <li onClick={onClick} className={isSelected ? 'selected' : ''}>
           <Icon sx={{ fontSize: '5vh', color: '#cc689f' }} />
       </li>
     </Tooltip>
@@ -28,7 +27,8 @@ const TabIcon = ({ icon: Icon, onClick, label }) => {
 TabIcon.propTypes = {
   icon: PropTypes.elementType.isRequired,
   link: PropTypes.string.isRequired,
-  label: PropTypes.string
+  label: PropTypes.string,
+  isSelected: PropTypes.bool
 };
 
 function App() {
@@ -45,6 +45,7 @@ function App() {
   const scrollToSection = (ref, path) => {
     navigate(path);
     ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    setSelectedTab(path);
   };
 
   // Update the URL route based on scroll position
@@ -77,10 +78,30 @@ function App() {
           <nav>
             <ul className="nav-tabs">
 
-            <TabIcon icon={HomeTwoToneIcon} link="/mishaaisyah" label="Home" onClick={() => scrollToSection(homeRef, 'mishaaisyah')} />
-            <TabIcon icon={BuildTwoToneIcon} link="/skill" label="My skills" onClick={() => scrollToSection(skillRef, 'skill')} />
-            <TabIcon icon={FavoriteTwoToneIcon} link="/interests" label="My interests" onClick={() => scrollToSection(interestsRef, 'interests')} />
-            <TabIcon icon={QuestionAnswerTwoToneIcon} link="/contact" label="Contact" onClick={() => scrollToSection(contactRef, 'contact')} />
+            <TabIcon 
+              icon={HomeTwoToneIcon} 
+              label="Home" 
+              onClick={() => scrollToSection(homeRef, 'mishaaisyah')} 
+              isSelected={selectedTab === 'mishaaisyah'}
+            />
+            <TabIcon 
+              icon={BuildTwoToneIcon} 
+              label="My skills" 
+              onClick={() => scrollToSection(skillRef, 'skill')} 
+              isSelected={selectedTab === 'skill'}
+            />
+            <TabIcon 
+              icon={FavoriteTwoToneIcon} 
+              label="My interests" 
+              onClick={() => scrollToSection(interestsRef, 'interests')} 
+              isSelected={selectedTab === 'interests'}
+            />
+            <TabIcon 
+              icon={QuestionAnswerTwoToneIcon} 
+              label="Contact" 
+              onClick={() => scrollToSection(contactRef, 'contact')} 
+              isSelected={selectedTab === 'contact'}
+            />
 
             </ul>
           </nav>
