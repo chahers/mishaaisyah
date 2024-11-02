@@ -19,7 +19,7 @@ const TabIcon = ({ icon: Icon, onClick, label }) => {
   return (
     <Tooltip title={label} placement= 'right'>
       <li onClick={onClick}>
-          <Icon sx={{ fontSize: '3vw', color: '#cc689f' }} />
+          <Icon sx={{ fontSize: '5vh', color: '#cc689f' }} />
       </li>
     </Tooltip>
   );

@@ -11,6 +11,20 @@ import mysqlIcon from './mysql.svg';
 import postgresqlIcon from './postgresql.svg';
 
 const Skill = () => {
+
+    const skills = [
+        { name: 'React', icon: reactIcon },
+        { name: 'HTML', icon: htmlIcon },
+        { name: 'CSS', icon: cssIcon },
+        { name: 'JavaScript', icon: jsIcon },
+        { name: 'GitHub', icon: githubIcon },
+        { name: 'Python', icon: pythonIcon },
+        { name: 'Java', icon: javaIcon },
+        { name: 'C', icon: cIcon },
+        { name: 'MySQL', icon: mysqlIcon },
+        { name: 'PostgreSQL', icon: postgresqlIcon },
+    ];
+
     return ( 
         <>
         <div className='skill-wrapper'>
@@ -20,7 +34,11 @@ const Skill = () => {
                     <p className='skill-description'>These are the tools and technologies I have worked with during my studies in Lancaster University.</p>
                 </div>
                 <ul className='apps'>
-
+                {skills.map((skill, index) => (
+                        <li key={index} className='skill-item'>
+                            <img src={skill.icon} alt={`${skill.name} icon`} className='skill-icon' />
+                        </li>
+                    ))}
                 </ul>
             </div>
         </div>

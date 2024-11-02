@@ -3,8 +3,10 @@ import './Interests.css';
 const Interests = () => {
     return ( 
         <>
+        <div className='interests-wrapper'>
         <h1 className='interests-heading'>My interests</h1>
-        <div className='interests-container'/>
+        </div>
+        <div className='interests-backlay'/>
         </>
      );
 }

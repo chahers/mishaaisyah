@@ -1,9 +1,16 @@
-.contact-container{
+.contact-backlay{
     margin: 10px 0 10px 4.5vw;
-    width: calc(95vw - 4.5vw);
-    height: 600px;
+    width: calc(90.5vw);
+    height: 100vh;
     background-color: bisque;
     opacity: 0.2;
     border-radius: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+@media(max-width: 440px){
+    .contact-backlay{
+        margin-left: 45px;
+        width: calc(100vw - 90px);
+    }
 }

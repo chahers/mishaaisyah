@@ -7,7 +7,7 @@ const Home = () => {
     return ( 
         <>
             <h1 className='myheading'>Hello World, I'm Misha!</h1>
-            <div className='container'>
+            <div className='home-wrapper'>
                 <img src={picture} alt="Misha" 
                 className={`image ${isLoaded ? 'loaded' : ''}`} onLoad={() => setIsLoaded(true)}/>
                 <div className="image-description">

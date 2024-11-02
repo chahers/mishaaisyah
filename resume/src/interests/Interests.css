@@ -1,7 +1,7 @@
-.interests-container{
+.interests-backlay{
     margin: 10px 0 10px 4.5vw;
-    width: calc(95vw - 4.5vw);
-    height: 600px;
+    width: calc(90.5vw);
+    height: 100vh;
     background-color: bisque;
     opacity: 0.2;
     border-radius: 20px;
@@ -12,8 +12,34 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 9vh;
+    font-family: 'Dongle';
+    line-height: 1.0;
+    font-size: 12vh;
     color: #b3025d;
     z-index: 1;
+    text-align: center;
+}
+
+.interests-wrapper {
+    position: absolute;
+    width: calc(90.5vw);
+    margin: 10px 0 10px 4.5vw;
+    height: 100vh;
+}
+
+@media(min-width: 310px) and (max-width: 440px){
+    .interests-wrapper {
+        margin-left: 45px;
+        width: calc(100vw - 90px);
+    }
+
+    .interests-backlay {
+        margin-left: 45px;
+        width: calc(100vw - 90px);
+    }
+
+    .interests-heading {
+        margin: 0 1vw;
+        font-size: 7vh;
+    }
 }
